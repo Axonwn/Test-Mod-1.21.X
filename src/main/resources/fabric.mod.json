@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testmod",
+	"version": "${version}",
+	"name": "Test Mod",
+	"description": "Este mod es mi primera prueba haciendo mods para Minecraft ¡¡YIPPEE!!",
+	"authors": [
+		"Axo"
+	],
+	"contact": {
+		"homepage": "N/A",
+		"sources": "N/A"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/testmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.axo.testmod.TestMod"
+		],
+		"fabric-datagen": [
+			"net.axo.testmod.TestModDataGenerator"
+		],
+      "client": [
+        "net.axo.testmod.TestModClient"
+      ]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
